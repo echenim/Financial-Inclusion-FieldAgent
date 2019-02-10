@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_grp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/bill_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custom_btn_bills_item"
+        android:clickable="false"
+        android:tint="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/bill_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:gravity="center_horizontal"
+        android:text="Funds Transfer"
+        app:textAllCaps="true" />
+</android.support.v7.widget.LinearLayoutCompat>

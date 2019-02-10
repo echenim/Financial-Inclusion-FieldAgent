@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/object_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:padding="16dp"
+        android:text="Revenue Collection"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+</LinearLayout>

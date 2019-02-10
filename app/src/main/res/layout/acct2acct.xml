@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Account to Account Transaction"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Sender Bank" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/senderBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Select Bank" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/drp_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_right_white_24dp"
+            android:tint="@color/colorPrimary" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Sender Account" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/senderAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Sender Account Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Receiver Bank" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/receiverBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Select Bank" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/receiver_bank_drp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_right_white_24dp"
+            android:tint="@color/colorPrimary" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Account Number" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/receiverAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Receiver Account Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Amount" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/amountField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Amount to Transfer"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Agent Pin" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/agentPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Agent Pin"
+            android:inputType="text"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/makeTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="32dp"
+
+        android:paddingRight="32dp"
+        android:text="Make Transfer"
+        android:textColor="@color/white" />
+
+</LinearLayout>

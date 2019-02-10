@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/trasaction_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:text="2016-12-19"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/trasaction_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="\u20a612,000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/trasaction_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Revenue Collection"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ddd" />
+    </LinearLayout>
+</LinearLayout>

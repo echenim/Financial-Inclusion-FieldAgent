@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Trasaction Complete"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Ok"
+        android:textColor="@color/white" />
+
+</LinearLayout>

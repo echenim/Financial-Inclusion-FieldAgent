@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Account Opening"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Basic Information" />
+
+    <SurfaceView
+
+        android:id="@+id/camerapreview"
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:id="@+id/take_image_from_camera"
+            android:layout_width="wrap_content"
+            android:width="200dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Take Passpot"/>
+        <Button
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:id="@+id/retake_image_from_camera"
+        android:layout_width="wrap_content"
+        android:width="200dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Start Camera"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Phone" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="+234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/phoneField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Surname" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/surName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Surname"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="FirstName" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="First Name"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Other Names" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/oName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Other Names"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Address" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="top"
+            android:hint="Residential Address"
+            android:maxLines="4"
+            android:minLines="2"
+            android:padding="16dp"
+
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Place of Birth" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/placeOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Place of Birth"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Gender" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/gender_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Select Gender" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/gender_drp_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_right_white_24dp"
+            android:tint="@color/colorPrimary" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Date of Birth" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Select Date" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/dob_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_right_white_24dp"
+            android:tint="@color/colorPrimary" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Next of Kin Data" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Phone" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="+234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/phoneField_NOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Name" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/name_NOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Name of Next of Kin"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Address" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/address_NOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="top"
+            android:hint="Residential Address of Next of kin"
+            android:maxLines="4"
+            android:minLines="2"
+            android:padding="16dp"
+
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Account Details" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Card Issuer" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/cardIssuer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Card Serial Number Issuer"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="16dp"
+            android:textColorHint="#ddd"
+            android:textSize="14dp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ddd" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Product" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Select Product" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/product_drp_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_right_white_24dp"
+            android:tint="@color/colorPrimary" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/makeTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Open Account"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+

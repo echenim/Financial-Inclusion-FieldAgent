@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="bills">
+        <item>Funds</item>
+        <item>Revenue Collection</item>
+        <item>Bills Payment</item>
+    </array>
+
+    <array name="ic_bills">
+        <item>@drawable/money_transfer</item>
+        <item>@drawable/invoice</item>
+        <item>@drawable/revenue</item>
+    </array>
+    <array name="bank_operation">
+        <item>Account Opening</item>
+        <item>Bank Deposit</item>
+        <item>Bank Withdrawal</item>
+    </array>
+    <array name="funds">
+        <item>Cash to Cash</item>
+        <item>Cash to Account</item>
+        <item>Account to Cash</item>
+        <item>Account to Account</item>
+    </array>
+
+
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <array name="product">
+        <item>Savings</item>
+        <item>Current</item>
+        <item>Commitment Savings</item>
+    </array>
+
+</resources>

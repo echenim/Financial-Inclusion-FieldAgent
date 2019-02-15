@@ -1,2 +1,3 @@
 # AgentBanking-Mobile
 Agent Banking solution for field agent
+A banking agent is a retail or postal outlet contracted by a financial institution or a mobile network operator to process clients’ transactions. Rather than a branch teller, it is the owner or an employee of the retail outlet who conducts the transaction and lets clients deposit, withdraw, transfer funds, pay their bills, inquire about an account balance, or receive government benefits or a direct deposit from their employer. Banking agents can be pharmacies, supermarkets, convenience stores, lottery outlets, post offices, and more.
